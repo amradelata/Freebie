@@ -194,11 +194,50 @@ body {
   padding: 100px 0; }
   .our-latest span {
     text-transform: uppercase; }
+  .our-latest .nav-tow {
+    margin-bottom: 50px; }
   .our-latest ul li a {
     color: #c7c7c7;
     padding: 9px 23px;
+    margin-top: 50px;
     transition: 0.16s;
     border-radius: 17px; }
+  .our-latest .cards .cadr {
+    margin-bottom: 35px; }
+    .our-latest .cards .cadr .img {
+      height: 300px;
+      background-position: center center;
+      background-size: cover;
+      position: relative; }
+      .our-latest .cards .cadr .img .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #673dfc;
+        opacity: 0;
+        transition: 0.33s; }
+      .our-latest .cards .cadr .img .overlay:hover {
+        opacity: 1; }
+      .our-latest .cards .cadr .img .wight-left {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 10px 13px;
+        cursor: pointer; }
+      .our-latest .cards .cadr .img .wight-right {
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 10px 13px;
+        cursor: pointer; }
 
 .our-latest li:hover a {
   background: #673dfc;
