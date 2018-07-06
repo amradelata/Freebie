@@ -12,7 +12,26 @@ body
 	// background: red	
 	height: 6000px
 
+// slider-dots
+.carousel-indicators
+	left: 5%
+	top: 100%
+	width: 54%
+	padding-left: 80px
 
+.carousel-indicators li
+	width: 33px
+	height: 7px
+	background-color: #663cfc
+	border: none
+	border-radius: 2px
+
+.carousel-indicators .active
+	width: 33px
+	height: 7px
+	background-color: #fff
+	border: none
+	border-radius: 2px
 .navbar
 	font-size: 14px
 	height: 0
@@ -24,7 +43,7 @@ body
 	top: 0
 	left: 0
 	right: 0
-	border-bottom: 0.5px solid #e6deff
+	border-bottom: 1px solid #a386ff
 	padding-bottom: 87px
 .navbar .brand
 	float: left
@@ -39,15 +58,16 @@ body
 	text-transform: uppercase
 	cursor: pointer
 
-.navbar .links li a 
+.navbar .links li a //.....................................................................
 	color: #fff
 	text-decoration: none
-	padding: 3px 18px
+	padding: 3px 10px
 	margin-top: 10px
+	border-radius: 10px
+	transition: 0.16s
 
 .navbar .links li:hover a
 	background: #fff
-	border-radius: 10px
 	color: $primary-color
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
 
@@ -129,6 +149,10 @@ body
 			border: none
 			background: transparent
 			color: $primary-color
+			outline: none
+			i
+				font-size: 8px
+				color: red
 
 
 		.center
@@ -139,39 +163,101 @@ body
 				color: #fff
 			
 
-
-
-
-	.features:before
+	.features:before     //curved div
 		content: ""
 		position: absolute
 		left: 0
 		right: 0
 		bottom: -90px
-		height: 170px
+		height: 200px
 		background: #fff
 		transform: skew(0,5deg)
 		z-index: 0
 
-.carousel-indicators
-	left: 5%
-	top: 100%
-	width: 54%
-	padding-left: 80px
 
-.carousel-indicators li
-	width: 33px
-	height: 7px
-	background-color: #663cfc
-	border: none
-	border-radius: 2px
 
-.carousel-indicators .active
-	width: 33px
-	height: 7px
-	background-color: #fff
-	border: none
-	border-radius: 2px
+
+
+
+// about-our-history
+
+
+.about-our-history
+	// position: relative
+	margin-top: 250px
+	text-align: center
+	span
+		// display: block
+		text-transform: uppercase
+	h1
+		margin-bottom: 35px
+	p
+		margin-bottom: 35px
+
+	button
+		border: none
+		background: transparent
+		color: $primary-color
+		outline: none
+		margin-bottom: 35px
+		i
+			font-size: 8px
+
+
+.gray
+	width: 100%
+	height: 300px
+	background: #eeeeee
+
+
+.customer-opinions
+	text-align: center
+	background: #8145fe
+	color: #fff
+	padding: 100px 10px
+	p
+		font-size: 20px
+		margin-bottom: 35px
+	.carousel-indicators
+		top: 130%
+		left: 50%
+
+.our-latest
+	padding: 100px 0
+	span
+		text-transform: uppercase
+	ul
+		li
+			a
+				color: #c7c7c7
+				padding: 9px 23px
+				transition: 0.16s
+				border-radius: 17px
+
+.our-latest li:hover a
+	background: $primary-color
+	color: #fff
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
