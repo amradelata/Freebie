@@ -94,13 +94,23 @@ body
 	background-image: linear-gradient(to left top, #673dfc, #7140fd, #7b43fd, #8446fe, #8c49ff)
 	position: relative
 	color: #fff
+	overflow: hidden
+	.carousel-example-generic
+		z-index: 9999
+	img
+		opacity: 0.1
+		height: 900px
+		right: -429px
+		top: 150px
+		position: absolute
+		// z-index: 1
 	.overlay
 		position: absolute
 		top: 0
 		left: 0
 		bottom: 0
 		right: 0
-		// background: rgba(85, 19, 145, 0.34)
+		background: rgba(113, 70, 152, 0.33)
 		.contint
 			margin-top: 15%
 			h1
@@ -118,7 +128,7 @@ body
 		position: absolute
 		// bottom: 90px
 		z-index: 9999
-		bottom: -130px
+		bottom: 8px
 		.left
 			background: #fff
 			height: 500px
@@ -276,17 +286,56 @@ body
 					padding: 10px 13px
 					cursor: pointer
 
-
-
-
-
-
-
 .our-latest li:hover a
 	background: $primary-color
 	color: #fff
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
 
+
+// our-achievement
+
+.our-achievement
+	// position: relative
+	background-image: linear-gradient(to left, #4d62d6, #5464d6, #5b66d7, #6169d7, #676bd8)
+	padding: 100px 0
+	width: 100%
+	color: #fff
+	.right
+		h2
+			line-height: 44px
+			margin-top: 0
+		.numbers
+			display: inline-block
+			width: 32%
+
+	.play
+		position: relative
+		.circle-one
+			position: absolute
+			padding: 10px
+			width: 200px
+			height: 200px
+			border-radius: 50%
+			border: 1px solid #fff
+			top: 50%
+			left: 50%
+			// transform: translate(-50%, -50%)
+			.circle-tow
+				position: absolute
+				// padding: 10px
+				width: 150px
+				height: 150px
+				border-radius: 50%
+				border: 3px solid #fff
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				i
+					font-size: 50px
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
 
 
 		

@@ -83,13 +83,23 @@ body {
   height: 170vh;
   background-image: linear-gradient(to left top, #673dfc, #7140fd, #7b43fd, #8446fe, #8c49ff);
   position: relative;
-  color: #fff; }
+  color: #fff;
+  overflow: hidden; }
+  .hero-section .carousel-example-generic {
+    z-index: 9999; }
+  .hero-section img {
+    opacity: 0.1;
+    height: 900px;
+    right: -429px;
+    top: 150px;
+    position: absolute; }
   .hero-section .overlay {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0; }
+    right: 0;
+    background: rgba(113, 70, 152, 0.33); }
     .hero-section .overlay .contint {
       margin-top: 15%; }
       .hero-section .overlay .contint h1 {
@@ -105,7 +115,7 @@ body {
   .hero-section .services {
     position: absolute;
     z-index: 9999;
-    bottom: -130px; }
+    bottom: 8px; }
     .hero-section .services .left {
       background: #fff;
       height: 500px;
@@ -243,6 +253,44 @@ body {
   background: #673dfc;
   color: #fff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.our-achievement {
+  background-image: linear-gradient(to left, #4d62d6, #5464d6, #5b66d7, #6169d7, #676bd8);
+  padding: 100px 0;
+  width: 100%;
+  color: #fff; }
+  .our-achievement .right h2 {
+    line-height: 44px;
+    margin-top: 0; }
+  .our-achievement .right .numbers {
+    display: inline-block;
+    width: 32%; }
+  .our-achievement .play {
+    position: relative; }
+    .our-achievement .play .circle-one {
+      position: absolute;
+      padding: 10px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      top: 50%;
+      left: 50%; }
+      .our-achievement .play .circle-one .circle-tow {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        .our-achievement .play .circle-one .circle-tow i {
+          font-size: 50px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
 
 @media (max-width: 480px) {
   .navbar .links li {
