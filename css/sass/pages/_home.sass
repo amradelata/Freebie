@@ -10,7 +10,7 @@ body
 	margin: 0
 	font-family: 'Roboto Condensed', sans-serif
 	// background: red	
-	height: 6000px
+	// height: 6000px
 
 // slider-dots
 .carousel-indicators
@@ -87,10 +87,11 @@ body
 
 
 
-// ...................................................
+// 33333333333333333333333333333333333333333333333333333333333333333333333333333333
 
 .hero-section
-	height: 170vh
+	// height: 170vh
+	height: 1500px
 	background-image: linear-gradient(to left top, #673dfc, #7140fd, #7b43fd, #8446fe, #8c49ff)
 	position: relative
 	color: #fff
@@ -231,8 +232,8 @@ body
 	.carousel-indicators
 		top: 130%
 		left: 50%
-
-.our-latest
+//2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+.our-latest  
 	padding: 100px 0
 	span
 		text-transform: uppercase
@@ -304,6 +305,8 @@ body
 		h2
 			line-height: 44px
 			margin-top: 0
+		h1
+			font-weight: bold
 		.numbers
 			display: inline-block
 			width: 32%
@@ -320,6 +323,8 @@ body
 			top: 50%
 			left: 50%
 			// transform: translate(-50%, -50%)
+			cursor: pointer
+
 			.circle-tow
 				position: absolute
 				// padding: 10px
@@ -336,13 +341,197 @@ body
 					top: 50%
 					left: 50%
 					transform: translate(-50%, -50%)
+			
+.play .circle-one:hover
+	border: 3px solid #ccc
 
+	.circle-tow:hover
+		border: 3px solid #ccc
+
+.play .circle-tow i:hover
+	color: #ccc
 
 		
+.our-blog
+	padding: 100px 0
+	text-align: center
+	span
+		text-transform: uppercase
+
+.our-blog .cards-tow
+	margin-top: 50px
+.our-blog .cards-tow .cadr-tow
+	margin-bottom: 35px
+	text-align: left
+	cursor: pointer
+	.img
+		height: 200px
+		background-position: center center
+		background-size: cover
+		position: relative
+		margin-bottom: 50px
+		.overlay
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background-color: $primary-color
+			opacity: 0
+			transition: 0.33s
+		.overlay:hover
+			opacity: 0.7
+
+.our-blog .cards-tow .cadr-tow .paragraph span
+	color: #cacaca
+	margin-right: 15px
+.our-blog .cards-tow .cadr-tow .paragraph p
+	font-size: 20px	
+	margin-bottom: 15px
+	margin-top: 5px
+.our-blog .cards-tow .cadr-tow .paragraph button
+	border: none
+	background: transparent
+	color: #cacaca
+	outline: none
+	margin-bottom: 35px
+	text-transform: uppercase
+.our-blog .cards-tow .cadr-tow:hover button
+	color: #673dfc
 
 
 
 
+
+
+.hero-section-tow
+	// height: 135vh
+	height: 900px
+	background-image: linear-gradient(to left top, #673dfc, #7140fd, #7b43fd, #8446fe, #8c49ff)
+	position: relative
+	color: #e3daff
+	overflow: hidden
+	// color: #000
+	padding: 400px 0
+	img
+		opacity: 0.1
+		height: 900px
+		right: -429px
+		top: 150px
+		position: absolute
+	.features-tow:before     
+		content: ""
+		position: absolute
+		left: 0
+		right: 0
+		top: -85px
+		height: 250px
+		background: #fff
+		transform: skew(0,5deg)
+		z-index: 0
+	.content
+		text-align: left
+
+		.startuply
+			h1
+				text-transform: uppercase
+				margin: 0
+				margin-bottom: 35px
+				color: #fff
+			p
+				margin: 0
+				margin-bottom: 25px
+
+		.post
+			h3
+				margin: 0
+				margin-bottom: 35px
+			p
+				margin: 0
+				margin-bottom: 15px
+			span
+				margin: 0
+				margin-bottom: 30px
+				display: block
+				font-size: 18px
+			span:before
+				content: ""
+				position: absolute
+				top: 180px
+				height: 1px
+				width: 250px
+				background: #cab2ff
+		.tweets
+			h3
+				margin: 0
+				margin-bottom: 35px
+
+			p
+				margin-bottom: 95px
+			p:before
+				content: ""
+				position: absolute
+				top: 180px
+				height: 1px
+				width: 250px
+				background: #cab2ff
+
+		.footer
+			position: absolute
+			padding: 30px 0
+			bottom: 0
+			text-align: center
+			span
+				float: right
+			ul
+				margin: 0
+				padding: 0
+				li
+					list-style: none
+					display: inline-block
+					margin-right: 20px
+					// margin: 0
+					// padding: 0
+					a
+						text-decoration: none
+						color: #e3daff	
+
+.services:before
+	content: ""
+	position: absolute
+	top: 0
+	height: 1px
+	width: 1170px
+	background: #cab2ff
+
+
+.hero-section-tow .content:before
+	content: ""
+	position: absolute
+	top: 800px
+	height: 1px
+	width: 1170px
+	background: #cab2ff
+
+.content .useful h3
+	margin: 0
+	margin-bottom: 35px
+.content .useful ul
+	margin: 0
+	padding: 0
+.content .useful ul li 
+	list-style: none
+	margin-bottom: 20px
+.content .useful ul li i
+	margin-right: 10px
+	font-size: 5px
+.content .useful ul li a
+	text-decoration: none
+	color: #e3daff
+
+			
+
+					
 
 
 
@@ -364,52 +553,60 @@ body
 
 @media (max-width: 480px)
 
-	.navbar .links li
-		background: #431a54
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form
+		background-color: rebeccapurple
+	.navbar .brand
+		float: none
+	.navbar
+		border-bottom: 0px solid #a386ff
+	.services:before
+		height: 0
+	.carousel-indicators
+		width: 100%
+		left: 15%
+	.hero-section
+		height: 2000px
+		text-align: center
+
+	.hero-section .services .left
+		position: absolute
+		right: 10px
+		top: -610px
+		height: 540px
+	.hero-section .services .center
+		height: 400px
 
 	.hero-section .overlay .contint h1
 		font-size: 35px
-		margin-bottom: 15px
 
-	.hero-section .overlay .contint input
-		margin-bottom: 15px
+	.hero-section .services .left .links
+		text-align: left
 
-	.flex-button
-		padding: 4px 15px
-		right: -39px
-		bottom: 10%
-	.hero-section .overlay .contint input
-		padding: 10px 30px
+	.hero-section .overlay .contint
+		margin-top: 25%
 
-	.hero-section .overlay .contint button
-		padding: 5px 10px
+	.about-our-history
+		margin-top: 0
 
-	.hero-section .circle
-		width: 70px
-		height: 70px
-		bottom: -75px
+	.customer-opinions .carousel-indicators
+		left: 15%
 
-	.design .overlay .content img
-		width: 280px
 
-	.cards .card
-		flex-basis: calc(100% - 20px)
+	// .our-latest li:hover a
+	// 	padding: 10px 41px
+	// 	width: 50%
+	// 	margin: auto
 
-	.Shuffle-Plugin .border button
-		margin: 0
-		padding: 15px 0
-		width: 100%
-	.push-yourself .content h1
-		font-size: 50px
+	// .our-latest ul li a
+	// 	width: 50%
+	// 	margin: auto
 
-	.Laptop
-		display: none
-	.footer
-		margin-bottom: 100px
-		p
-			text-align: center
-		h4
-			text-align: center
+	// h1, h2
+	// 	text-align: center
 
-		.Tweet
-			margin-top: 50px
+
+
+
+
+
+		
